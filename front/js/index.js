@@ -12,7 +12,7 @@ fetch('https://kanapbackend.onrender.com/api/products/')
   .then(jsonListProduct => {
     let contentToAdd = ''
     for (const jsonProduct of jsonListProduct) {
-      contentToAdd += `<a href="/front/html/product.html?id=${jsonProduct._id} ">
+      contentToAdd += `<a href="./front/html/product.html?id=${jsonProduct._id} ">
                                <article>
                                  <img src="${jsonProduct.imageUrl}" alt="${jsonProduct.altTxt} ">
                                  <h3 class="productName">${jsonProduct.name} </h3>
