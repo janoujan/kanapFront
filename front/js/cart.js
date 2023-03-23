@@ -145,7 +145,7 @@ const formCheckAndPost = () => {
         .querySelector('.cart__order__form')
         .reportValidity()
       if (valid) {
-        fetch('http://localhost:3000/api/products/order', {
+        fetch('https://kanapbackend.onrender.com/api/products/order', {
           method: 'POST',
           headers: { 'content-type': 'application/json' },
           body: JSON.stringify({

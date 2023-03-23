@@ -7,7 +7,7 @@
 // let path = await fetch(config.getServerPath())
 
 // un fetch et une boucle pour afficher les produits de l'API
-fetch('http://localhost:3000/api/products/')
+fetch('https://kanapbackend.onrender.com/api/products/')
   .then(data => data.json())
   .then(jsonListProduct => {
     let contentToAdd = ''

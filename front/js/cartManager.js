@@ -77,7 +77,9 @@ export class Cart {
    * @returns Number  retourne le prix du produit appelé
    */
   fetchKanapPrice (kanapId) {
-    let price = fetch(`http://localhost:3000/api/products/${kanapId}`)
+    let price = fetch(
+      `https://kanapbackend.onrender.com/api/products/${kanapId}`
+    )
       .then(function (response) {
         if (response.ok) {
           return response.json()

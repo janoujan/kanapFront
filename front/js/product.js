@@ -22,7 +22,7 @@ const optionColor = document.getElementById('colors')
 
 // une fonction pour recupérer les données de l'API et les afficher
 const displayKanap = () => {
-  fetch(`http://localhost:3000/api/products/${id}`)
+  fetch(`https://kanapbackend.onrender.com/api/products/${id}`)
     .then(data => data.json())
     .then(jsonKanap => {
       kanapImg.innerHTML = `<img src="${jsonKanap.imageUrl}" alt="${jsonKanap.altTxt}">`
