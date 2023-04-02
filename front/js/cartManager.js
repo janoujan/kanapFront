@@ -78,7 +78,7 @@ export class Cart {
    */
   fetchKanapPrice (kanapId) {
     let price = fetch(
-      `https://kanapbackend.onrender.com/api/products/${kanapId}`
+      `https://kanapback-382417.oa.r.appspot.com/api/products/${kanapId}`
     )
       .then(function (response) {
         if (response.ok) {
