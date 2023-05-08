@@ -7,7 +7,7 @@
 // let path = await fetch(config.getServerPath())
 
 // un fetch et une boucle pour afficher les produits de l'API
-fetch('https://kanapback-382417.oa.r.appspot.com/api/products/')
+fetch('https://kanap-backend-five.vercel.app/api/products/')
   .then(data => data.json())
   .then(jsonListProduct => {
     let contentToAdd = ''
