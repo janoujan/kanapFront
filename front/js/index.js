@@ -24,5 +24,5 @@ fetch('https://kanap-backend-five.vercel.app/api/products/')
   })
   .catch(_error => {
     document.querySelector('section').innerHTML =
-      '<h3>impossible de contacter le serveur</h3>'
+      '<h3>impossible de contacter le serveur </h3>'
   })
